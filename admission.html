@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, initial-scale=1.0">
+    <title>Admission 2025-26 - Apply Now | Pragya Valley Academy</title>
+    <meta name="description" content="Apply for admission to Pragya Valley Academy for the 2025-26 academic session. Arts, Science, and Commerce streams available. Limited seats.">
+    <link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=YOUR_FAVICON_ID">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+/* ADMISSION PAGE - DARK THEME REBUILD */
+.adm-hero{background:linear-gradient(135deg,#0e1524 0%,#1a2640 55%,#0e1a30 100%);padding:150px 0 70px;text-align:center;position:relative;overflow:hidden}
+.adm-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 40% at 15% 50%,rgba(61,142,240,.13) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 85% 30%,rgba(255,120,37,.09) 0%,transparent 70%);pointer-events:none}
+.adm-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,120,37,.15);border:1px solid rgba(255,120,37,.35);color:#ff7825;padding:7px 22px;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:20px}
+.adm-hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;color:#eaf0f8;margin:0 0 14px;line-height:1.2}
+.adm-hero h1 .hl{color:#3d8ef0}
+.adm-hero .sub{font-size:1.05rem;color:#a8bdd1;max-width:560px;margin:0 auto 28px}
+.adm-stats{display:inline-flex;gap:0;background:rgba(255,255,255,.04);border:1px solid rgba(61,142,240,.18);border-radius:16px;overflow:hidden;margin-bottom:22px}
+.adm-stat{padding:15px 28px;border-right:1px solid rgba(61,142,240,.15);text-align:center}
+.adm-stat:last-child{border-right:none}
+.adm-stat strong{display:block;font-size:1.45rem;font-weight:800;color:#ff7825}
+.adm-stat span{font-size:.7rem;color:#637f9a;letter-spacing:.04em}
+.adm-bc{font-size:.8rem;color:#637f9a}
+.adm-bc a{color:#3d8ef0;text-decoration:none}
+
+/* Urgency */
+.urg-wrap{padding:30px 0 0}
+.urg-box{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.28);border-radius:14px;padding:15px 24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.urg-ico{width:38px;height:38px;border-radius:50%;background:rgba(239,68,68,.18);color:#ef4444;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;animation:upulse 2s ease-in-out infinite}
+@keyframes upulse{0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,.4)}50%{box-shadow:0 0 0 8px rgba(239,68,68,0)}}
+.urg-txt{flex:1;font-size:.92rem;color:#eaf0f8;font-weight:500}
+.urg-txt strong{color:#ef4444}
+.urg-seats{display:flex;gap:10px;flex-wrap:wrap}
+.urg-seat{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:5px 14px;font-size:.8rem;color:#eaf0f8}
+.urg-seat b{color:#ff7825}
+
+/* Main */
+.adm-sec{padding:54px 0 80px}
+.adm-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:36px;align-items:start}
+.adm-left{display:flex;flex-direction:column;gap:22px}
+
+/* Cards */
+.aic{background:var(--bg-card,#1e2a3e);border:1px solid rgba(61,142,240,.14);border-radius:16px;padding:26px 28px;transition:border-color .2s,box-shadow .2s}
+.aic:hover{border-color:rgba(61,142,240,.32);box-shadow:0 8px 30px rgba(0,0,0,.2)}
+.act{display:flex;align-items:center;gap:10px;font-size:1rem;font-weight:700;color:#eaf0f8;margin:0 0 20px;padding-bottom:14px;border-bottom:1px solid rgba(61,142,240,.1)}
+.act .ti{width:36px;height:36px;border-radius:9px;flex-shrink:0;background:rgba(61,142,240,.12);color:#3d8ef0;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+
+/* Seats */
+.srow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.sbox{background:var(--bg-light,#1c2438);border:1px solid rgba(61,142,240,.12);border-radius:12px;padding:18px 10px;text-align:center;position:relative;overflow:hidden}
+.sbox::after{content:"";position:absolute;bottom:0;left:0;right:0;height:3px}
+.sbox.a::after{background:#a78bfa}.sbox.s::after{background:#2ecc8a}.sbox.c::after{background:#ff7825}
+.sn{font-size:2.2rem;font-weight:800;line-height:1}
+.sbox.a .sn{color:#a78bfa}.sbox.s .sn{color:#2ecc8a}.sbox.c .sn{color:#ff7825}
+.sl{font-size:.72rem;color:#637f9a;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-top:4px}
+
+/* Eligibility */
+.erow{display:flex;align-items:flex-start;gap:14px;padding:13px 0;border-bottom:1px solid rgba(61,142,240,.08)}
+.erow:last-child{border-bottom:none;padding-bottom:0}
+.eic{width:40px;height:40px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem}
+.eic.a{background:rgba(167,139,250,.12);color:#a78bfa}.eic.s{background:rgba(46,204,138,.12);color:#2ecc8a}.eic.c{background:rgba(255,120,37,.12);color:#ff7825}
+.ebd h4{font-size:.86rem;font-weight:700;color:#eaf0f8;margin:0 0 3px}.ebd p{font-size:.79rem;color:#a8bdd1;margin:0;line-height:1.5}
+
+/* Dates */
+.drow{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid rgba(61,142,240,.08);gap:8px}
+.drow:last-child{border-bottom:none;padding-bottom:0}
+.dlbl{font-size:.83rem;color:#a8bdd1;display:flex;align-items:center;gap:8px}
+.dlbl i{color:#3d8ef0;font-size:.72rem}
+.dval{font-size:.83rem;font-weight:700;color:#ff7825;white-space:nowrap}
+
+/* Steps */
+.steps{display:flex;flex-direction:column}
+.strow{display:flex;gap:14px;padding:12px 0;position:relative}
+.strow:not(:last-child)::after{content:"";position:absolute;left:16px;top:40px;bottom:0;width:2px;background:rgba(61,142,240,.14)}
+.stn{width:34px;height:34px;border-radius:50%;flex-shrink:0;background:var(--bg-light,#1c2438);border:2px solid rgba(61,142,240,.3);color:#3d8ef0;font-weight:800;font-size:.82rem;display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
+.stb h4{font-size:.86rem;font-weight:700;color:#eaf0f8;margin:0 0 2px}.stb p{font-size:.77rem;color:#637f9a;margin:0;line-height:1.5}
+
+/* Docs */
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ditem{display:flex;align-items:flex-start;gap:9px;background:var(--bg-light,#1c2438);border-radius:9px;padding:11px 13px;font-size:.8rem;color:#a8bdd1;line-height:1.4}
+.ditem i{color:#2ecc8a;font-size:.82rem;flex-shrink:0;margin-top:2px}
+
+/* Fee table */
+.ftbl{width:100%;border-collapse:collapse;font-size:.84rem}
+.ftbl thead tr{background:var(--primary,#3d8ef0)}
+.ftbl thead th{padding:11px 15px;text-align:left;color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.03em}
+.ftbl thead th:first-child{border-radius:8px 0 0 0}.ftbl thead th:last-child{border-radius:0 8px 0 0}
+.ftbl tbody tr{border-bottom:1px solid rgba(61,142,240,.1);transition:background .15s}
+.ftbl tbody tr:hover{background:rgba(61,142,240,.06)}
+.ftbl tbody td{padding:12px 15px;color:#a8bdd1}
+.ftbl tbody td:first-child{font-weight:700;color:#eaf0f8}
+.ftbl .tc{font-weight:800;color:#ff7825!important}
+.fnote{font-size:.75rem;color:#637f9a;margin-top:10px;display:flex;align-items:center;gap:6px}
+.fnote i{color:#2ecc8a}
+
+/* Form panel */
+.adm-right{position:sticky;top:90px}
+.fcard{background:var(--bg-card,#1e2a3e);border:1px solid rgba(61,142,240,.2);border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.fch{background:linear-gradient(135deg,#1e5cbe 0%,#3d8ef0 100%);padding:28px 30px 22px}
+.fch h2{font-size:1.3rem;font-weight:800;color:#fff;margin:0 0 8px}
+.fch p{font-size:.86rem;color:rgba(255,255,255,.8);margin:0}
+.fcbadges{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.fcbadge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:4px 13px;font-size:.71rem;font-weight:600;color:#fff}
+.fcbody iframe{width:100%;height:880px;border:none;display:block}
+.fcfoot{padding:14px 26px;background:var(--bg-light,#1c2438);border-top:1px solid rgba(61,142,240,.1);display:flex;align-items:center;gap:8px;font-size:.77rem;color:#637f9a}
+.fcfoot i{color:#2ecc8a}
+
+/* Scholarship */
+.sc-sec{padding:70px 0;background:var(--bg-light,#1c2438)}
+.sc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.scc{background:var(--bg-card,#1e2a3e);border:1px solid rgba(61,142,240,.12);border-radius:16px;padding:30px 24px;text-align:center;position:relative;overflow:hidden;transition:border-color .2s,transform .2s}
+.scc::before{content:"";position:absolute;top:0;left:0;right:0;height:3px}
+.scc:nth-child(1)::before{background:linear-gradient(90deg,#fbbf24,#f59e0b)}
+.scc:nth-child(2)::before{background:linear-gradient(90deg,#2ecc8a,#1fa870)}
+.scc:nth-child(3)::before{background:linear-gradient(90deg,#3d8ef0,#1e5cbe)}
+.scc:hover{border-color:rgba(61,142,240,.32);transform:translateY(-4px)}
+.scico{width:60px;height:60px;border-radius:15px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.scc:nth-child(1) .scico{background:rgba(251,191,36,.12);color:#fbbf24}
+.scc:nth-child(2) .scico{background:rgba(46,204,138,.12);color:#2ecc8a}
+.scc:nth-child(3) .scico{background:rgba(61,142,240,.12);color:#3d8ef0}
+.scc h3{font-size:.95rem;font-weight:700;color:#eaf0f8;margin:0 0 10px}
+.scpct{font-size:2rem;font-weight:800;line-height:1;margin-bottom:10px}
+.scc:nth-child(1) .scpct{color:#fbbf24}.scc:nth-child(2) .scpct{color:#2ecc8a}.scc:nth-child(3) .scpct{color:#3d8ef0}
+.scc p{font-size:.82rem;color:#a8bdd1;line-height:1.6;margin:0}
+
+/* CTA */
+.adm-cta{padding:60px 0;background:linear-gradient(135deg,#1e5cbe 0%,#3d8ef0 100%);text-align:center}
+.adm-cta h2{font-size:1.75rem;font-weight:800;color:#fff;margin:0 0 10px}
+.adm-cta p{color:rgba(255,255,255,.8);font-size:.95rem;margin:0 0 26px}
+.cta-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn-w{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:10px;background:#fff;color:#1e5cbe;font-weight:700;font-size:.9rem;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn-w:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.btn-ol{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:10px;border:2px solid rgba(255,255,255,.6);color:#fff;font-weight:700;font-size:.9rem;text-decoration:none;transition:all .2s}
+.btn-ol:hover{background:rgba(255,255,255,.15);border-color:#fff}
+
+/* Responsive */
+@media(max-width:1100px){.adm-grid{grid-template-columns:1fr}.adm-right{position:static}.fcbody iframe{height:1000px}}
+@media(max-width:700px){.adm-stats{flex-direction:column;width:100%;max-width:300px}.adm-stat{border-right:none;border-bottom:1px solid rgba(61,142,240,.15)}.adm-stat:last-child{border-bottom:none}.dgrid{grid-template-columns:1fr}.sc-grid{grid-template-columns:1fr}.urg-seats{display:none}}
+    </style>
+</head>
+<body>
+
+    <a href="admission.html" class="sticky-btn" aria-label="Apply for Admission">
+        <i class="fas fa-edit"></i><span>Apply Now</span>
+    </a>
+    <a href="#" class="floating-whatsapp" data-wa-link aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text" data-school-name>Pragya Valley Academy</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="facility.html">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admission.html" class="nav-cta active">Admission 2025</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="adm-hero">
+        <div class="container">
+            <div class="adm-badge"><i class="fas fa-graduation-cap"></i> Admissions Open &nbsp;&middot;&nbsp; Session <span data-session>2025-26</span></div>
+            <h1>Admissions <span class="hl">2025&ndash;26</span></h1>
+            <p class="sub">Begin your journey with <strong data-school-name>Pragya Valley Academy</strong> &mdash; Assam's most trusted higher secondary institute</p>
+            <div class="adm-stats">
+                <div class="adm-stat"><strong data-years-excellence>25+</strong><span>Years Excellence</span></div>
+                <div class="adm-stat"><strong data-pass-percentage>95%</strong><span>Board Pass Rate</span></div>
+                <div class="adm-stat"><strong data-alumni-count>5,000+</strong><span>Alumni</span></div>
+                <div class="adm-stat"><strong>3</strong><span>Streams</span></div>
+            </div>
+            <div class="adm-bc"><a href="index.html">Home</a> &nbsp;/&nbsp; Admission 2025-26</div>
+        </div>
+    </section>
+
+    <!-- URGENCY -->
+    <section class="urg-wrap">
+        <div class="container">
+            <div class="urg-box">
+                <div class="urg-ico"><i class="fas fa-fire-alt"></i></div>
+                <div class="urg-txt"><strong>Limited Seats Available!</strong> Hurry &mdash; seats filling fast for 2025-26 session.</div>
+                <div class="urg-seats">
+                    <span class="urg-seat"><b data-seats-arts>40</b> Arts</span>
+                    <span class="urg-seat"><b data-seats-science>45</b> Science</span>
+                    <span class="urg-seat"><b data-seats-commerce>30</b> Commerce</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <section class="adm-sec">
+        <div class="container">
+            <div class="adm-grid">
+
+                <!-- LEFT -->
+                <div class="adm-left">
+
+                    <div class="aic" data-aos="fade-up">
+                        <h3 class="act"><div class="ti"><i class="fas fa-chair"></i></div>Seat Availability 2025&ndash;26</h3>
+                        <div class="srow">
+                            <div class="sbox a"><div class="sn" data-seats-arts>40</div><div class="sl">Arts</div></div>
+                            <div class="sbox s"><div class="sn" data-seats-science>45</div><div class="sl">Science</div></div>
+                            <div class="sbox c"><div class="sn" data-seats-commerce>30</div><div class="sl">Commerce</div></div>
+                        </div>
+                    </div>
+
+                    <div class="aic" data-aos="fade-up" data-aos-delay="50">
+                        <h3 class="act"><div class="ti"><i class="fas fa-check-double"></i></div>Eligibility Criteria</h3>
+                        <div class="erow"><div class="eic a">A</div><div class="ebd"><h4>Arts Stream</h4><p>Passed Class 10 (SEBA/CBSE) with minimum 40% aggregate marks</p></div></div>
+                        <div class="erow"><div class="eic s">S</div><div class="ebd"><h4>Science Stream</h4><p>Passed Class 10 with minimum 75% in Science &amp; Mathematics combined</p></div></div>
+                        <div class="erow"><div class="eic c">C</div><div class="ebd"><h4>Commerce Stream</h4><p>Passed Class 10 with minimum 60% aggregate; Mathematics preferred</p></div></div>
+                    </div>
+
+                    <div class="aic" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="act"><div class="ti"><i class="fas fa-calendar-alt"></i></div>Important Dates</h3>
+                        <div class="drow"><span class="dlbl"><i class="fas fa-circle"></i>Application Opens</span><span class="dval">January 15, 2025</span></div>
+                        <div class="drow"><span class="dlbl"><i class="fas fa-circle"></i>Last Date to Apply</span><span class="dval" data-last-date>March 31, 2025</span></div>
+                        <div class="drow"><span class="dlbl"><i class="fas fa-circle"></i>Entrance Test (Science)</span><span class="dval">April 15, 2025</span></div>
+                        <div class="drow"><span class="dlbl"><i class="fas fa-circle"></i>Counseling Starts</span><span class="dval">April 20, 2025</span></div>
+                        <div class="drow"><span class="dlbl"><i class="fas fa-circle"></i>Classes Begin</span><span class="dval">June 1, 2025</span></div>
+                    </div>
+
+                    <div class="aic" data-aos="fade-up" data-aos-delay="150">
+                        <h3 class="act"><div class="ti"><i class="fas fa-list-ol"></i></div>Admission Process</h3>
+                        <div class="steps">
+                            <div class="strow"><div class="stn">1</div><div class="stb"><h4>Fill Online Enquiry Form</h4><p>Complete the form on this page with accurate details</p></div></div>
+                            <div class="strow"><div class="stn">2</div><div class="stb"><h4>Receive Counselor Call</h4><p>Our team will call within 24 hours to guide you</p></div></div>
+                            <div class="strow"><div class="stn">3</div><div class="stb"><h4>Submit Documents</h4><p>Visit campus with originals + photocopies of all documents</p></div></div>
+                            <div class="strow"><div class="stn">4</div><div class="stb"><h4>Pay Application Fee</h4><p>Pay &₹;<span data-app-fee>500</span> application fee (online or in-person)</p></div></div>
+                            <div class="strow"><div class="stn">5</div><div class="stb"><h4>Entrance Test / Counseling</h4><p>Science applicants: entrance test. Others: counseling session</p></div></div>
+                            <div class="strow"><div class="stn">6</div><div class="stb"><h4>Seat Confirmed!</h4><p>Pay admission fees, collect ID card &amp; welcome kit</p></div></div>
+                        </div>
+                    </div>
+
+                    <div class="aic" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="act"><div class="ti"><i class="fas fa-file-alt"></i></div>Documents Required</h3>
+                        <div class="dgrid">
+                            <div class="ditem"><i class="fas fa-check-circle"></i>Class 10 Marksheet &amp; Certificate</div>
+                            <div class="ditem"><i class="fas fa-check-circle"></i>Transfer Certificate (TC)</div>
+                            <div class="ditem"><i class="fas fa-check-circle"></i>Character Certificate</div>
+                            <div class="ditem"><i class="fas fa-check-circle"></i>4 Passport Size Photos</div>
+                            <div class="ditem"><i class="fas fa-check-circle"></i>Aadhar Card (Student)</div>
+                            <div class="ditem"><i class="fas fa-check-circle"></i>Caste Certificate (if applicable)</div>
+                            <div class="ditem"><i class="fas fa-check-circle"></i>Income Certificate (scholarship)</div>
+                            <div class="ditem"><i class="fas fa-check-circle"></i>Migration Certificate (if CBSE)</div>
+                        </div>
+                    </div>
+
+                    <div class="aic" data-aos="fade-up" data-aos-delay="250">
+                        <h3 class="act"><div class="ti"><i class="fas fa-rupee-sign"></i></div>Fee Structure (Per Annum)</h3>
+                        <table class="ftbl">
+                            <thead><tr><th>Stream</th><th>Tuition Fee</th><th>Other Fees</th><th>Total</th></tr></thead>
+                            <tbody>
+                                <tr><td>Arts</td><td>&#8377;20,000</td><td>&#8377;5,000</td><td class="tc">&#8377;25,000</td></tr>
+                                <tr><td>Science</td><td>&#8377;28,000</td><td>&#8377;7,000</td><td class="tc">&#8377;35,000</td></tr>
+                                <tr><td>Commerce</td><td>&#8377;24,000</td><td>&#8377;6,000</td><td class="tc">&#8377;30,000</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="fnote"><i class="fas fa-info-circle"></i>Application fee &#8377;<span data-app-fee>500</span> (non-refundable). Scholarships available for meritorious students.</p>
+                    </div>
+
+                </div><!-- /adm-left -->
+
+                <!-- RIGHT: FORM -->
+                <div class="adm-right" data-aos="fade-left">
+                    <div class="fcard">
+                        <div class="fch">
+                            <h2><i class="fas fa-edit" style="margin-right:8px;opacity:.85"></i>Online Admission Enquiry</h2>
+                            <p>Fill the form below &mdash; our counselor contacts you within 24 hours.</p>
+                            <div class="fcbadges">
+                                <span class="fcbadge"><i class="fas fa-lock"></i> 100% Secure</span>
+                                <span class="fcbadge"><i class="fas fa-clock"></i> 24hr Response</span>
+                                <span class="fcbadge"><i class="fas fa-phone"></i> Free Counseling</span>
+                            </div>
+                        </div>
+                        <div class="fcbody">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfD7VA7J7EAofkbYduBBQphrPwOWrmEgt7q79l8sR5dajJAYQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" title="Admission Enquiry Form">Loading&hellip;</iframe>
+                        </div>
+                        <div class="fcfoot"><i class="fas fa-shield-alt"></i> Your information is secure and used only for admission guidance.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHOLARSHIPS -->
+    <section class="sc-sec">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span class="section-subtitle">Merit &amp; Need Based</span>
+                <h2>Scholarships Available</h2>
+                <p>Rewarding excellence and supporting every deserving student</p>
+            </div>
+            <div class="sc-grid">
+                <div class="scc" data-aos="fade-up"><div class="scico"><i class="fas fa-star"></i></div><h3>Merit Scholarship</h3><div class="scpct">100%</div><p>Full fee waiver for students scoring 90%+ in Class 10 board exams</p></div>
+                <div class="scc" data-aos="fade-up" data-aos-delay="100"><div class="scico"><i class="fas fa-trophy"></i></div><h3>Sports Quota</h3><div class="scpct">25%</div><p>Fee concession for state or national level sports players. Certificate required.</p></div>
+                <div class="scc" data-aos="fade-up" data-aos-delay="200"><div class="scico"><i class="fas fa-hand-holding-heart"></i></div><h3>EWS Support</h3><div class="scpct">50%</div><p>Need-based scholarship for economically weaker section students.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="adm-cta">
+        <div class="container">
+            <h2>Have Questions? Talk to Our Counselors</h2>
+            <p>Free personalized guidance &mdash; call, WhatsApp, or visit our campus.</p>
+            <div class="cta-btns">
+                <a href="#" class="btn-w" data-phone-link><i class="fas fa-phone"></i> Call Now</a>
+                <a href="#" class="btn-ol" data-wa-link><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="contact.html" class="btn-ol"><i class="fas fa-map-marker-alt"></i> Visit Campus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo" data-school-name>Pragya Valley Academy</a>
+                    <p>Assam's premier higher secondary institute affiliated to AHSEC. Excellence in Arts, Science &amp; Commerce.</p>
+                    <div class="social-links"></div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="facility.html">Facilities</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="notices.html">Notices</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="arts.html">Arts Stream</a></li>
+                        <li><a href="science.html">Science Stream</a></li>
+                        <li><a href="commerce.html">Commerce Stream</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info"></ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/dynamic-demo.js"></script>
+    <script src="js/config-loader.js"></script>
+    <script src="js/footer-generator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

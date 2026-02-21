@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280, initial-scale=1.0">
+    <title>Our Facilities | Pragya Valley Academy</title>
+    <meta name="description" content="World-class facilities at Pragya Valley Academy — Smart classrooms, science labs, library, computer centre, sports, and integrated JEE/NEET coaching.">
+
+    <link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=YOUR_FAVICON_ID">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+    /* ═══════════════════════════════════════════════════
+       FACILITIES PAGE  –  Complete Styles
+    ═══════════════════════════════════════════════════ */
+
+    /* ── Hero ── */
+    .fac-hero {
+        background: linear-gradient(135deg, #0a1628 0%, #1a3060 60%, #0a1628 100%);
+        padding: 160px 0 80px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .fac-hero::before {
+        content: "";
+        position: absolute; inset: 0;
+        background: radial-gradient(ellipse at 40% 0%, rgba(46,204,138,.12) 0%, transparent 65%),
+                    radial-gradient(ellipse at 80% 100%, rgba(61,142,240,.1) 0%, transparent 60%);
+        pointer-events: none;
+    }
+    .fac-hero h1 {
+        font-size: clamp(2.2rem, 4vw, 3.2rem);
+        font-weight: 800; color: #fff;
+        margin: 14px 0 14px; line-height: 1.15;
+    }
+    .fac-hero h1 span { color: #5fe0aa; }
+    .fac-hero p {
+        font-size: 1.05rem; color: rgba(255,255,255,.7);
+        max-width: 600px; margin: 0 auto;
+    }
+
+    /* ── IMAGE SLIDER ── */
+    .fac-slider-section {
+        background: #0d1525;
+        padding: 0;
+        position: relative;
+    }
+    .fac-swiper {
+        width: 100%;
+        height: 560px;
+    }
+    .fac-swiper .swiper-slide {
+        position: relative;
+        overflow: hidden;
+    }
+    .fac-swiper .swiper-slide img {
+        width: 100%; height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 6s ease;
+    }
+    .fac-swiper .swiper-slide-active img {
+        transform: scale(1.04);
+    }
+    .fac-slide-overlay {
+        position: absolute; inset: 0;
+        background: linear-gradient(to top, rgba(8,14,28,.85) 0%, rgba(8,14,28,.2) 50%, transparent 100%);
+        display: flex; align-items: flex-end;
+        padding: 40px 56px;
+    }
+    .fac-slide-content { max-width: 600px; }
+    .fac-slide-content h3 {
+        font-size: 1.6rem; font-weight: 800; color: #fff;
+        margin: 0 0 8px; text-shadow: 0 2px 12px rgba(0,0,0,.5);
+    }
+    .fac-slide-content p {
+        font-size: .95rem; color: rgba(255,255,255,.78);
+        margin: 0; text-shadow: 0 1px 6px rgba(0,0,0,.4);
+    }
+    .fac-slide-badge {
+        display: inline-flex; align-items: center; gap: 7px;
+        padding: 5px 14px; border-radius: 999px;
+        background: rgba(46,204,138,.2);
+        border: 1px solid rgba(46,204,138,.4);
+        color: #5fe0aa; font-size: .8rem; font-weight: 700;
+        margin-bottom: 12px; letter-spacing: .04em;
+    }
+
+    /* Swiper navigation overrides */
+    .fac-swiper .swiper-button-next,
+    .fac-swiper .swiper-button-prev {
+        width: 50px; height: 50px;
+        background: rgba(255,255,255,.12);
+        backdrop-filter: blur(10px);
+        border-radius: 50%;
+        border: 1px solid rgba(255,255,255,.2);
+        color: #fff !important;
+        transition: background .2s;
+    }
+    .fac-swiper .swiper-button-next:hover,
+    .fac-swiper .swiper-button-prev:hover { background: rgba(255,255,255,.22); }
+    .fac-swiper .swiper-button-next::after,
+    .fac-swiper .swiper-button-prev::after { font-size: 1.1rem !important; }
+    .fac-swiper .swiper-pagination-bullet {
+        background: rgba(255,255,255,.5); opacity: 1;
+    }
+    .fac-swiper .swiper-pagination-bullet-active {
+        background: #5fe0aa; transform: scale(1.3);
+    }
+
+    /* ── STATS STRIP ── */
+    .fac-stats-strip {
+        background: linear-gradient(90deg, #1a2438 0%, #1e3060 50%, #1a2438 100%);
+        border-top: 1px solid rgba(61,142,240,.15);
+        border-bottom: 1px solid rgba(61,142,240,.15);
+    }
+    .fac-stats-inner {
+        display: flex; justify-content: center;
+    }
+    .fac-stat {
+        flex: 1; max-width: 200px; text-align: center;
+        padding: 26px 16px;
+        border-right: 1px solid rgba(61,142,240,.12);
+    }
+    .fac-stat:last-child { border-right: none; }
+    .fac-stat-num {
+        font-size: 2rem; font-weight: 800; color: #3d8ef0;
+        display: block; line-height: 1; margin-bottom: 5px;
+    }
+    .fac-stat-lbl { font-size: .8rem; color: rgba(255,255,255,.5); text-transform: uppercase; letter-spacing: .06em; }
+
+    /* ── SECTION COMMON ── */
+    .fac-section { padding: 80px 0; }
+    .fac-section.dark  { background: #111827; }
+    .fac-section.darker { background: #0d1525; }
+    .fac-section.mid   { background: #151c2c; }
+
+    /* ── FACILITY GRID ── */
+    .fac-grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 48px; }
+    .fac-grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; margin-top: 48px; }
+
+    .fac-card {
+        background: #1a2438;
+        border: 1px solid rgba(61,142,240,.12);
+        border-radius: 18px; padding: 32px 28px;
+        transition: transform .28s, border-color .28s, box-shadow .28s;
+        position: relative; overflow: hidden;
+    }
+    .fac-card::before {
+        content: "";
+        position: absolute; top: 0; left: 0; right: 0;
+        height: 3px;
+        background: var(--card-accent, linear-gradient(90deg,#3d8ef0,#1e5cbe));
+        border-radius: 18px 18px 0 0;
+        opacity: 0; transition: opacity .28s;
+    }
+    .fac-card:hover {
+        transform: translateY(-6px);
+        border-color: rgba(61,142,240,.28);
+        box-shadow: 0 16px 48px rgba(0,0,0,.35);
+    }
+    .fac-card:hover::before { opacity: 1; }
+
+    .fac-card-icon {
+        width: 60px; height: 60px; border-radius: 16px;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 1.5rem; margin-bottom: 20px;
+    }
+    .fac-card h3 { font-size: 1.05rem; font-weight: 700; color: #eaf0f8; margin-bottom: 10px; }
+    .fac-card p  { font-size: .88rem; color: #7a9ab8; line-height: 1.65; margin-bottom: 0; }
+    .fac-card ul {
+        list-style: none; margin: 12px 0 0; padding: 0;
+        display: flex; flex-direction: column; gap: 7px;
+    }
+    .fac-card ul li {
+        font-size: .84rem; color: #a8bdd1;
+        display: flex; align-items: center; gap: 8px;
+    }
+    .fac-card ul li i { color: #2ecc8a; font-size: .8rem; flex-shrink: 0; }
+
+    /* Icon colour variants */
+    .ic-blue   { background: rgba(61,142,240,.15);  color: #3d8ef0; }
+    .ic-green  { background: rgba(46,204,138,.12);  color: #2ecc8a; }
+    .ic-orange { background: rgba(255,120,37,.14);  color: #ff7825; }
+    .ic-purple { background: rgba(167,139,250,.14); color: #a78bfa; }
+    .ic-gold   { background: rgba(251,191,36,.12);  color: #fbbf24; }
+    .ic-red    { background: rgba(248,113,113,.12); color: #f87171; }
+    .ic-teal   { background: rgba(20,184,166,.12);  color: #2dd4bf; }
+    .ic-pink   { background: rgba(244,114,182,.12); color: #f472b6; }
+
+    /* ── INTEGRATED COACHING (special section) ── */
+    .fac-coaching {
+        padding: 80px 0;
+        background: linear-gradient(135deg, #0a1a2e 0%, #0f2848 60%, #0a1a2e 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    .fac-coaching::before {
+        content: "";
+        position: absolute; inset: 0;
+        background: radial-gradient(ellipse at 80% 50%, rgba(61,142,240,.12) 0%, transparent 60%);
+        pointer-events: none;
+    }
+    .fac-coaching-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px; align-items: center;
+        margin-top: 48px;
+    }
+    .fac-coaching-card {
+        background: rgba(255,255,255,.04);
+        border: 1px solid rgba(61,142,240,.2);
+        border-radius: 20px; padding: 36px 32px;
+        position: relative; overflow: hidden;
+    }
+    .fac-coaching-card::after {
+        content: "";
+        position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    }
+    .fac-coaching-card.jee::after  { background: linear-gradient(90deg,#3d8ef0,#a78bfa); }
+    .fac-coaching-card.neet::after { background: linear-gradient(90deg,#2ecc8a,#3d8ef0); }
+    .fac-coaching-card.ca::after   { background: linear-gradient(90deg,#fbbf24,#ff7825); }
+    .fac-coaching-card.ias::after  { background: linear-gradient(90deg,#f472b6,#a78bfa); }
+    .coaching-header {
+        display: flex; align-items: center; gap: 16px; margin-bottom: 18px;
+    }
+    .coaching-badge {
+        padding: 6px 16px; border-radius: 999px;
+        font-size: .8rem; font-weight: 800;
+        letter-spacing: .05em; text-transform: uppercase;
+    }
+    .jee-badge  { background: rgba(61,142,240,.2);  color: #93c5fd; }
+    .neet-badge { background: rgba(46,204,138,.15); color: #6ee7b7; }
+    .ca-badge   { background: rgba(251,191,36,.15); color: #fcd34d; }
+    .ias-badge  { background: rgba(244,114,182,.15);color: #f9a8d4; }
+    .coaching-title { font-size: 1.2rem; font-weight: 800; color: #eaf0f8; margin: 0; }
+    .coaching-sub   { font-size: .82rem; color: #637f9a; margin: 2px 0 0; }
+    .fac-coaching-card p { font-size: .9rem; color: #a8bdd1; line-height: 1.65; margin-bottom: 18px; }
+    .coaching-features {
+        list-style: none; margin: 0; padding: 0;
+        display: flex; flex-direction: column; gap: 9px;
+    }
+    .coaching-features li {
+        display: flex; align-items: center; gap: 10px;
+        font-size: .85rem; color: #c0d4e8;
+    }
+    .coaching-features li i { font-size: .8rem; flex-shrink: 0; }
+    .jee-fi  i { color: #93c5fd; }
+    .neet-fi i { color: #6ee7b7; }
+    .ca-fi   i { color: #fcd34d; }
+    .ias-fi  i { color: #f9a8d4; }
+    .coaching-stat {
+        display: inline-flex; align-items: center; gap: 8px;
+        margin-top: 20px; padding: 8px 16px;
+        border-radius: 999px;
+        font-size: .82rem; font-weight: 700;
+    }
+    .coaching-stat.jee-s  { background: rgba(61,142,240,.12);  color: #93c5fd; border: 1px solid rgba(61,142,240,.2); }
+    .coaching-stat.neet-s { background: rgba(46,204,138,.1);   color: #6ee7b7; border: 1px solid rgba(46,204,138,.2); }
+    .coaching-stat.ca-s   { background: rgba(251,191,36,.1);   color: #fcd34d; border: 1px solid rgba(251,191,36,.18); }
+    .coaching-stat.ias-s  { background: rgba(244,114,182,.1);  color: #f9a8d4; border: 1px solid rgba(244,114,182,.18); }
+
+    /* ── HIGHLIGHTS BANNER ── */
+    .fac-highlights {
+        padding: 70px 0;
+        background: linear-gradient(135deg, #1e3060 0%, #0f2040 100%);
+    }
+    .fac-highlights-grid {
+        display: grid; grid-template-columns: repeat(4,1fr);
+        gap: 22px; margin-top: 44px;
+    }
+    .fac-hl-card {
+        text-align: center;
+        padding: 32px 20px;
+        background: rgba(255,255,255,.05);
+        border: 1px solid rgba(255,255,255,.1);
+        border-radius: 16px;
+        transition: background .25s, border-color .25s;
+    }
+    .fac-hl-card:hover { background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.18); }
+    .fac-hl-card i    { font-size: 2rem; margin-bottom: 16px; display: block; }
+    .fac-hl-card h3   { font-size: .95rem; font-weight: 700; color: #eaf0f8; margin-bottom: 6px; }
+    .fac-hl-card p    { font-size: .82rem; color: rgba(255,255,255,.55); line-height: 1.5; margin: 0; }
+
+    /* CTA */
+    .fac-cta {
+        padding: 80px 0;
+        background: linear-gradient(135deg, #0f1e35 0%, #1a3060 100%);
+        text-align: center;
+    }
+    .fac-cta h2 { font-size: clamp(1.7rem,3vw,2.3rem); font-weight: 800; color: #fff; margin-bottom: 12px; }
+    .fac-cta p  { font-size: 1rem; color: rgba(255,255,255,.65); margin-bottom: 32px; }
+    .fac-cta-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .fac-cta-btns a {
+        display: inline-flex; align-items: center; gap: 9px;
+        padding: 14px 30px; border-radius: 10px;
+        font-size: .95rem; font-weight: 700; text-decoration: none;
+        transition: transform .2s, box-shadow .2s;
+    }
+    .fac-cta-btns a:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+    .fac-btn-primary { background: linear-gradient(135deg,#ff7825,#d45f10); color: #fff; }
+    .fac-btn-outline { background: transparent; color: #93c5fd; border: 1px solid rgba(61,142,240,.4); }
+    </style>
+</head>
+<body>
+
+    <!-- STICKY -->
+    <a href="admission.html" class="sticky-btn" aria-label="Apply for Admission">
+        <i class="fas fa-edit"></i><span>Apply Now</span>
+    </a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text" data-school-name>Pragya Valley Academy</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="facilities.html" class="active">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="notices.html">Notices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admission.html" class="nav-cta">Admission 2025</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="fac-hero">
+        <div class="container">
+            <span class="section-subtitle">World-Class Infrastructure</span>
+            <h1>Our <span>Facilities</span></h1>
+            <p>Every resource your child needs to excel — from smart classrooms and fully-equipped labs to integrated competitive exam coaching.</p>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PHOTO SLIDER (10 images)
+         Replace the src URLs with your own
+         Google Drive links:
+         https://drive.google.com/uc?export=view&id=YOUR_FILE_ID
+         or any hosted image URL
+    ══════════════════════════════════════════ -->
+    <div class="fac-slider-section">
+        <div class="swiper fac-swiper" id="facilitySlider">
+            <div class="swiper-wrapper">
+
+                <!-- SLIDE 1 — Replace image URL -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=85" alt="Smart Classroom" loading="lazy">
+                    <div class="fac-slide-overlay">
+                        <div class="fac-slide-content">
+                            <span class="fac-slide-badge"><i class="fas fa-tv"></i> Academic Infrastructure</span>
+                            <h3>Smart Classrooms</h3>
+                            <p>Interactive digital boards, projectors, and high-speed internet in every classroom</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 — Replace image URL -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600&q=85" alt="Central Library" loading="lazy">
+                    <div class="fac-slide-overlay">
+                        <div class="fac-slide-content">
+                            <span class="fac-slide-badge"><i class="fas fa-book"></i> Knowledge Hub</span>
+                            <h3>Central Library</h3>
+                            <p>10,000+ books, journals, digital resources and a calm reading environment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3 — Replace image URL -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=1600&q=85" alt="Science Lab" loading="lazy">
+                    <div class="fac-slide-overlay">
+                        <div class="fac-slide-content">
+                            <span class="fac-slide-badge"><i class="fas fa-flask"></i> Practical Learning</span>
+                            <h3>Science Laboratories</h3>
+                            <p>Fully equipped Physics, Chemistry, and Biology labs with modern instruments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 4 — Replace image URL -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=1600&q=85" alt="Computer Lab" loading="lazy">
+                    <div class="fac-slide-overlay">
+                        <div class="fac-slide-content">
+                            <span class="fac-slide-badge"><i class="fas fa-desktop"></i> Digital Facility</span>
+                            <h3>Computer Centre</h3>
+                            <p>100+ latest systems with high-speed fibre internet and licensed software</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 5 — Replace image URL -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&q=85" alt="Study Hall" loading="lazy">
+                    <div class="fac-slide-overlay">
+                        <div class="fac-slide-content">
+                            <span class="fac-slide-badge"><i class="fas fa-user-graduate"></i> Student Support</span>
+                            <h3>Study Halls &amp; Doubt Rooms</h3>
+                            <p>Dedicated spaces for self-study, doubt clearing, and group discussions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 6 — Replace image URL -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=1600&q=85" alt="Seminar Hall" loading="lazy">
+                    <div class="fac-slide-overlay">
+                        <div class="fac-slide-content">
+                            <span class="fac-slide-badge"><i class="fas fa-chalkboard-teacher"></i> Events & Seminars</span>
+                            <h3>Seminar &amp; Conference Hall</h3>
+                            <p>Air-conditioned hall with 300-seat capacity for events, workshops, and PTMs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 7 — Replace image URL -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=1600&q=85" alt="Sports Ground" loading="lazy">
+                    <div class="fac-slide-overlay">
+                        <div class="fac-slide-content">
+                            <span class="fac-slide-badge"><i class="fas fa-running"></i> Sports & Fitness</span>
+                            <h3>Sports Ground &amp; Gymnasium</h3>
+                            <p>Dedicated sports field, indoor gym, and facilities for cricket, football, and athletics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 8 — Replace image URL -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=85" alt="Campus Building" loading="lazy">
+                    <div class="fac-slide-overlay">
+                        <div class="fac-slide-content">
+                            <span class="fac-slide-badge"><i class="fas fa-building"></i> Our Campus</span>
+                            <h3>Modern Campus Building</h3>
+                            <p>5-acre green campus with well-ventilated classrooms, wide corridors, and CCTV security</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 9 — Replace image URL -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=85" alt="Canteen" loading="lazy">
+                    <div class="fac-slide-overlay">
+                        <div class="fac-slide-content">
+                            <span class="fac-slide-badge"><i class="fas fa-utensils"></i> Student Welfare</span>
+                            <h3>Hygienic Canteen</h3>
+                            <p>Nutritious meals and snacks served in a clean and spacious canteen area</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 10 — Replace image URL -->
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=1600&q=85" alt="Medical Room" loading="lazy">
+                    <div class="fac-slide-overlay">
+                        <div class="fac-slide-content">
+                            <span class="fac-slide-badge"><i class="fas fa-heartbeat"></i> Health & Safety</span>
+                            <h3>Medical Room &amp; Counseling</h3>
+                            <p>First-aid facility, visiting doctor, and certified counselors for student well-being</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /swiper-wrapper -->
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         QUICK STATS STRIP
+    ══════════════════════════════════════════ -->
+    <div class="fac-stats-strip">
+        <div class="container">
+            <div class="fac-stats-inner">
+                <div class="fac-stat"><span class="fac-stat-num">30+</span><span class="fac-stat-lbl">Smart Classrooms</span></div>
+                <div class="fac-stat"><span class="fac-stat-num">5</span><span class="fac-stat-lbl">Science Labs</span></div>
+                <div class="fac-stat"><span class="fac-stat-num">100+</span><span class="fac-stat-lbl">Computer Systems</span></div>
+                <div class="fac-stat"><span class="fac-stat-num">10,000+</span><span class="fac-stat-lbl">Library Books</span></div>
+                <div class="fac-stat"><span class="fac-stat-num">5 Acres</span><span class="fac-stat-lbl">Green Campus</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         ACADEMIC FACILITIES
+    ══════════════════════════════════════════ -->
+    <section class="fac-section dark">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span class="section-subtitle">Learning Environment</span>
+                <h2>Academic Facilities</h2>
+                <p>Every facility designed to maximise learning, focus, and academic performance.</p>
+            </div>
+            <div class="fac-grid-3">
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="fac-card-icon ic-blue"><i class="fas fa-tv"></i></div>
+                    <h3>Smart Classrooms</h3>
+                    <p>30+ classrooms equipped with interactive digital boards, ceiling projectors, audio systems, and high-speed Wi-Fi.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Digital interactive boards</li>
+                        <li><i class="fas fa-check"></i>HD projectors in every room</li>
+                        <li><i class="fas fa-check"></i>Fibre-optic internet connectivity</li>
+                        <li><i class="fas fa-check"></i>Air-conditioned environment</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="fac-card-icon ic-green"><i class="fas fa-book-open"></i></div>
+                    <h3>Central Library</h3>
+                    <p>A comprehensive library with over 10,000 books, NCERT references, competitive exam materials, and digital e-library access.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>10,000+ books &amp; journals</li>
+                        <li><i class="fas fa-check"></i>JEE / NEET / AHSEC resources</li>
+                        <li><i class="fas fa-check"></i>Digital e-library subscriptions</li>
+                        <li><i class="fas fa-check"></i>Quiet reading hall (200 seats)</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="fac-card-icon ic-orange"><i class="fas fa-flask"></i></div>
+                    <h3>Science Laboratories</h3>
+                    <p>Separate, fully equipped labs for Physics, Chemistry, and Biology with modern instruments meeting AHSEC and CBSE standards.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Dedicated Physics Lab</li>
+                        <li><i class="fas fa-check"></i>Chemistry Lab with fume hoods</li>
+                        <li><i class="fas fa-check"></i>Biology Lab with microscopes</li>
+                        <li><i class="fas fa-check"></i>Safety-compliant equipment</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="fac-card-icon ic-purple"><i class="fas fa-desktop"></i></div>
+                    <h3>Computer Centre</h3>
+                    <p>Two dedicated computer labs with 100+ latest systems, licensed software, and high-speed internet for practical learning.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>100+ workstations</li>
+                        <li><i class="fas fa-check"></i>Latest hardware (i5/i7 systems)</li>
+                        <li><i class="fas fa-check"></i>Licensed MS Office &amp; coding tools</li>
+                        <li><i class="fas fa-check"></i>100 Mbps broadband connection</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="fac-card-icon ic-gold"><i class="fas fa-comments"></i></div>
+                    <h3>Doubt Clearing Rooms</h3>
+                    <p>Dedicated small-group rooms for one-on-one sessions with teachers — available every day before and after class hours.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>One-on-one mentoring</li>
+                        <li><i class="fas fa-check"></i>Daily doubt sessions (free)</li>
+                        <li><i class="fas fa-check"></i>Online doubt submission portal</li>
+                        <li><i class="fas fa-check"></i>Subject-wise specialist teachers</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="fac-card-icon ic-teal"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Seminar Hall</h3>
+                    <p>Fully air-conditioned 300-seat auditorium used for workshops, career guidance sessions, guest lectures, and annual events.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>300-seat air-conditioned hall</li>
+                        <li><i class="fas fa-check"></i>HD projector &amp; stage lighting</li>
+                        <li><i class="fas fa-check"></i>Professional sound system</li>
+                        <li><i class="fas fa-check"></i>Used for PTMs &amp; events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         INTEGRATED COACHING
+    ══════════════════════════════════════════ -->
+    <section class="fac-coaching">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span class="section-subtitle">Beyond the Curriculum</span>
+                <h2>Integrated Competitive Coaching</h2>
+                <p>Prepare for national-level competitive exams alongside your AHSEC curriculum — no extra travel, no extra institute.</p>
+            </div>
+            <div class="fac-coaching-grid">
+
+                <div class="fac-coaching-card jee" data-aos="fade-up" data-aos-delay="0">
+                    <div class="coaching-header">
+                        <span class="coaching-badge jee-badge">JEE</span>
+                        <div>
+                            <h3 class="coaching-title">JEE Main &amp; Advanced</h3>
+                            <p class="coaching-sub">For Science stream students targeting IITs &amp; NITs</p>
+                        </div>
+                    </div>
+                    <p>Our JEE coaching is seamlessly blended with the Class 11 &amp; 12 Science curriculum. Students cover both AHSEC and JEE syllabus without compromise.</p>
+                    <ul class="coaching-features jee-fi">
+                        <li><i class="fas fa-check-circle"></i>Physics, Chemistry, Mathematics — JEE level</li>
+                        <li><i class="fas fa-check-circle"></i>Weekly mock tests &amp; analysis</li>
+                        <li><i class="fas fa-check-circle"></i>Previous year paper workshops</li>
+                        <li><i class="fas fa-check-circle"></i>IIT-graduate visiting faculty</li>
+                    </ul>
+                    <div class="coaching-stat jee-s"><i class="fas fa-trophy"></i> 15+ JEE qualifiers in 2024</div>
+                </div>
+
+                <div class="fac-coaching-card neet" data-aos="fade-up" data-aos-delay="100">
+                    <div class="coaching-header">
+                        <span class="coaching-badge neet-badge">NEET</span>
+                        <div>
+                            <h3 class="coaching-title">NEET – UG</h3>
+                            <p class="coaching-sub">For Biology students targeting MBBS / BDS</p>
+                        </div>
+                    </div>
+                    <p>Structured NEET preparation for Biology students with special focus on Botany, Zoology, and Chemistry alongside the AHSEC Biology syllabus.</p>
+                    <ul class="coaching-features neet-fi">
+                        <li><i class="fas fa-check-circle"></i>NCERT-based Biology coaching</li>
+                        <li><i class="fas fa-check-circle"></i>Monthly NEET pattern tests</li>
+                        <li><i class="fas fa-check-circle"></i>Anatomy models &amp; lab practicals</li>
+                        <li><i class="fas fa-check-circle"></i>MBBS counselling guidance</li>
+                    </ul>
+                    <div class="coaching-stat neet-s"><i class="fas fa-trophy"></i> 20+ NEET qualifiers in 2024</div>
+                </div>
+
+                <div class="fac-coaching-card ca" data-aos="fade-up" data-aos-delay="0">
+                    <div class="coaching-header">
+                        <span class="coaching-badge ca-badge">CA Foundation</span>
+                        <div>
+                            <h3 class="coaching-title">CA Foundation Prep</h3>
+                            <p class="coaching-sub">For Commerce students planning Chartered Accountancy</p>
+                        </div>
+                    </div>
+                    <p>Commerce students get a head start on CA Foundation while completing their Class 12. Accountancy and Business Studies taught at CA-standard depth.</p>
+                    <ul class="coaching-features ca-fi">
+                        <li><i class="fas fa-check-circle"></i>Accounts &amp; Finance at CA depth</li>
+                        <li><i class="fas fa-check-circle"></i>Business Law fundamentals</li>
+                        <li><i class="fas fa-check-circle"></i>CA Foundation mock papers</li>
+                        <li><i class="fas fa-check-circle"></i>Mentoring by practising CAs</li>
+                    </ul>
+                    <div class="coaching-stat ca-s"><i class="fas fa-trophy"></i> 8 CA Foundation clears in 2024</div>
+                </div>
+
+                <div class="fac-coaching-card ias" data-aos="fade-up" data-aos-delay="100">
+                    <div class="coaching-header">
+                        <span class="coaching-badge ias-badge">Civil Services</span>
+                        <div>
+                            <h3 class="coaching-title">Civil Services Foundation</h3>
+                            <p class="coaching-sub">For Arts students aspiring for IAS / IPS / ACS</p>
+                        </div>
+                    </div>
+                    <p>Arts students are groomed for Civil Services from the ground up — building awareness, critical thinking, and essay writing through guided sessions.</p>
+                    <ul class="coaching-features ias-fi">
+                        <li><i class="fas fa-check-circle"></i>General studies orientation</li>
+                        <li><i class="fas fa-check-circle"></i>Current affairs &amp; newspaper analysis</li>
+                        <li><i class="fas fa-check-circle"></i>Essay writing workshops</li>
+                        <li><i class="fas fa-check-circle"></i>IAS/IPS alumni interaction sessions</li>
+                    </ul>
+                    <div class="coaching-stat ias-s"><i class="fas fa-star"></i> Assam's top civil services foundation</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         STUDENT WELFARE FACILITIES
+    ══════════════════════════════════════════ -->
+    <section class="fac-section mid">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span class="section-subtitle">Student Welfare</span>
+                <h2>Support &amp; Well-Being Facilities</h2>
+                <p>We care about every student's physical, mental, and emotional well-being — not just their grades.</p>
+            </div>
+            <div class="fac-grid-3">
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="fac-card-icon ic-red"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Medical Room</h3>
+                    <p>First-aid room with a visiting doctor twice weekly, trained nurse on campus daily, and tie-up with a nearby hospital for emergencies.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Trained nurse on duty daily</li>
+                        <li><i class="fas fa-check"></i>Visiting doctor twice a week</li>
+                        <li><i class="fas fa-check"></i>First-aid kit in every building</li>
+                        <li><i class="fas fa-check"></i>Hospital tie-up for emergencies</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="fac-card-icon ic-pink"><i class="fas fa-brain"></i></div>
+                    <h3>Counseling Centre</h3>
+                    <p>Certified counselors for academic pressure, career guidance, and personal issues. All sessions 100% confidential.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>2 certified counselors</li>
+                        <li><i class="fas fa-check"></i>Career guidance sessions</li>
+                        <li><i class="fas fa-check"></i>Stress management workshops</li>
+                        <li><i class="fas fa-check"></i>Parent counseling available</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="fac-card-icon ic-gold"><i class="fas fa-utensils"></i></div>
+                    <h3>Hygienic Canteen</h3>
+                    <p>Spacious, hygienic canteen serving nutritious meals and snacks at subsidised prices. FSSAI guidelines strictly followed.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Nutritious &amp; hygienic meals</li>
+                        <li><i class="fas fa-check"></i>Subsidised prices for students</li>
+                        <li><i class="fas fa-check"></i>Vegetarian &amp; non-veg options</li>
+                        <li><i class="fas fa-check"></i>Regular hygiene inspection</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="fac-card-icon ic-green"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Campus Security</h3>
+                    <p>Safe and secure campus with CCTV surveillance across all areas, trained security guards, and biometric entry system.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>200+ CCTV cameras</li>
+                        <li><i class="fas fa-check"></i>24×7 security guards</li>
+                        <li><i class="fas fa-check"></i>Biometric entry system</li>
+                        <li><i class="fas fa-check"></i>Separate entry for girls</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="fac-card-icon ic-blue"><i class="fas fa-bus"></i></div>
+                    <h3>Transport Service</h3>
+                    <p>Dedicated school buses covering major routes across the city and nearby areas, with GPS tracking and lady conductor on every bus.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>12 buses on 8 routes</li>
+                        <li><i class="fas fa-check"></i>GPS-tracked vehicles</li>
+                        <li><i class="fas fa-check"></i>Lady conductor on every bus</li>
+                        <li><i class="fas fa-check"></i>Affordable transport fee</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="fac-card-icon ic-orange"><i class="fas fa-wifi"></i></div>
+                    <h3>Campus-Wide Wi-Fi</h3>
+                    <p>High-speed fibre internet across the entire campus — classrooms, library, labs, and common areas for seamless digital learning.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>100 Mbps fibre internet</li>
+                        <li><i class="fas fa-check"></i>Coverage across all buildings</li>
+                        <li><i class="fas fa-check"></i>Content-filtered safe browsing</li>
+                        <li><i class="fas fa-check"></i>Student login-based access</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SPORTS & EXTRACURRICULAR
+    ══════════════════════════════════════════ -->
+    <section class="fac-section darker">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span class="section-subtitle">Beyond Academics</span>
+                <h2>Sports &amp; Extracurricular</h2>
+                <p>We believe in all-round development — physical fitness, arts, and leadership go hand-in-hand with academics.</p>
+            </div>
+            <div class="fac-grid-2">
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="fac-card-icon ic-green"><i class="fas fa-running"></i></div>
+                    <h3>Sports &amp; Athletics</h3>
+                    <p>A large sports ground with facilities for cricket, football, volleyball, and badminton. Certified sports coaches train students throughout the year.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Full-size cricket &amp; football field</li>
+                        <li><i class="fas fa-check"></i>Indoor badminton &amp; table tennis</li>
+                        <li><i class="fas fa-check"></i>Athletics track (200m)</li>
+                        <li><i class="fas fa-check"></i>Certified coaches for each sport</li>
+                        <li><i class="fas fa-check"></i>Annual sports day &amp; tournaments</li>
+                    </ul>
+                </div>
+                <div class="fac-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="fac-card-icon ic-purple"><i class="fas fa-theater-masks"></i></div>
+                    <h3>Arts, Culture &amp; NCC</h3>
+                    <p>Vibrant extracurricular programme including dance, music, drama, painting, debate, and NCC enrollment for interested students.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Dance &amp; music studio</li>
+                        <li><i class="fas fa-check"></i>Annual cultural fest (Utsav)</li>
+                        <li><i class="fas fa-check"></i>Debate &amp; public speaking club</li>
+                        <li><i class="fas fa-check"></i>NCC unit (Army wing)</li>
+                        <li><i class="fas fa-check"></i>Science &amp; robotics club</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         HIGHLIGHTS STRIP
+    ══════════════════════════════════════════ -->
+    <section class="fac-highlights">
+        <div class="container">
+            <div class="section-title light" data-aos="fade-up">
+                <h2>Why Our Facilities Stand Out</h2>
+                <p>What makes <span data-school-name>Pragya Valley Academy</span> the best-equipped institute in the region</p>
+            </div>
+            <div class="fac-highlights-grid">
+                <div class="fac-hl-card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fas fa-sync-alt" style="color:#3d8ef0;"></i>
+                    <h3>Regularly Upgraded</h3>
+                    <p>Labs and classrooms upgraded every 2 years with the latest equipment.</p>
+                </div>
+                <div class="fac-hl-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-leaf" style="color:#2ecc8a;"></i>
+                    <h3>Eco-Friendly Campus</h3>
+                    <p>Solar panels, rainwater harvesting, and a green plantation drive every year.</p>
+                </div>
+                <div class="fac-hl-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-universal-access" style="color:#a78bfa;"></i>
+                    <h3>Accessible to All</h3>
+                    <p>Ramps, accessible washrooms, and special support for differently-abled students.</p>
+                </div>
+                <div class="fac-hl-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-certificate" style="color:#fbbf24;"></i>
+                    <h3>AHSEC Compliant</h3>
+                    <p>All facilities meet and exceed the requirements set by AHSEC and state education board.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         CTA
+    ══════════════════════════════════════════ -->
+    <section class="fac-cta">
+        <div class="container">
+            <h2>Want to See Our Facilities in Person?</h2>
+            <p>Book a free campus visit — we'd love to show you around and answer all your questions.</p>
+            <div class="fac-cta-btns">
+                <a href="admission.html" class="fac-btn-primary">
+                    <i class="fas fa-graduation-cap"></i> Apply for Admission
+                </a>
+                <a href="contact.html" class="fac-btn-outline">
+                    <i class="fas fa-calendar-check"></i> Schedule a Campus Visit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo" data-school-name>Pragya Valley Academy</a>
+                    <p>Assam's premier higher secondary institute affiliated to AHSEC.</p>
+                    <div class="social-links"></div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="results.html">Results</a></li>
+                        <li><a href="notices.html">Notices</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="arts.html">Arts Stream</a></li>
+                        <li><a href="science.html">Science Stream</a></li>
+                        <li><a href="commerce.html">Commerce Stream</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info"></ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/dynamic-demo.js"></script>
+    <script src="js/config-loader.js"></script>
+    <script src="js/footer-generator.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Facility image slider — 10 slides, autoplay
+        if (document.getElementById("facilitySlider")) {
+            new Swiper("#facilitySlider", {
+                loop: true,
+                speed: 900,
+                autoplay: { delay: 4000, disableOnInteraction: false },
+                effect: "fade",
+                fadeEffect: { crossFade: true },
+                navigation: {
+                    nextEl: ".fac-swiper .swiper-button-next",
+                    prevEl: ".fac-swiper .swiper-button-prev",
+                },
+                pagination: {
+                    el: ".fac-swiper .swiper-pagination",
+                    clickable: true,
+                },
+                keyboard: { enabled: true },
+            });
+        }
+    });
+    </script>
+</body>
+</html>
