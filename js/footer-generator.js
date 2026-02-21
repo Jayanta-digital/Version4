@@ -199,7 +199,7 @@
                 '<div class="fbg-dev-body">' +
                     '<div class="fbg-dev-icon"><i class="fas fa-code"></i></div>' +
                     '<div class="fbg-dev-text">' +
-                        '<span class="fbg-dev-label">Crafted with ❤️ by</span>' +
+                        '<span class="fbg-dev-label">Developed with ❤️ by</span>' +
                         '<span class="fbg-dev-name">' + esc(DEV.name || "JTR Technology") + '</span>' +
                     '</div>' +
                     '<div class="fbg-dev-arrow"><i class="fas fa-arrow-right"></i></div>' +
